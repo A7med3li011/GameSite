@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #272b30;
+}
+
+
+
+
+
+.header img {
+    max-height: 30vh !important;
+}
+
+
+.navbar {
+    background-color: #3A497B !important;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    width: 35px;
+    margin-right: 10px;
+}
+
+.navbar-nav li a {
+    font-size: 13px;
+    transition: all .5s;
+}
+
+.navbar-nav li a.active {
+    color: #0394C7 !important;
+
+}
+
+.navbar-nav li a:hover {
+    color: #0394C7 !important;
+}
+
+.card img{
+    filter: grayscale(.7);
+    transition: all .5s;
+
+}
+.card {
+    background-color: #272B30;
+    border: 1px solid rgba(0, 0, 0, 0.244)!important;
+    width: 90% !important;
+    transition: all .5s;
+    /* min-height: 350px;
+    max-height: 350px; */
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.05);
+   
+}
+.card:hover.card img{
+    filter: grayscale(0);
+}
+.card .card-body{
+    font-size: 13px;
+}
+
+.card .middle{
+    /* background-color: red; */
+    height: 40px;
+    font-style: italic;
+
+    overflow: hidden;
+}
+.card .bottom{
+    margin-top: 10px;
+}
+.card .bottom div{
+    font-size: 10px;
+}
+
+.details {
+position: relative;
+}
+.details p span {
+    background-color: #0DCAF0;
+    color: black;
+    font-size: 13px;
+    padding: 3px 8px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.details button{
+    background-color: transparent;
+    border: 1px solid #D1A00F;
+    color: white;
+    padding: 5px 14px;
+    border-radius: 7px;
+    transition: all .4s;
+}
+
+.details button:hover{
+    background-color: #D1A00F;
+    /* color: white; */
+}
+
+.details .close{
+    position: absolute;
+    right:  0;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight:400;
+    color: #939395;
+    transition: all .4s;
+}
+.details .close:hover{
+    color: white;
+}
+
+
+@media screen and (max-width: 579px) {
+    .xxx{
+        margin-left: 28px;
+    }
+  }
+@media screen and (max-width: 409px) {
+    .navbar .logo .navbar-brand{
+     font-size: 14px
+    }
+  }
